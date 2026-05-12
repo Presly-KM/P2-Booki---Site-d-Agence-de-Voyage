@@ -102,33 +102,33 @@ p {
   #MAIN-SEARCH
 \*------------------------------------*/
 
-.searchHeaderTitle {
+.search-header-title {
   margin-bottom: 8px;
 }
 
-.searchHeaderSubtitle {
+.search-header-subtitle {
   margin-top: 0;
 }
 
-.searchForm {
+.search-form {
   display: flex;
   max-width: 100%;
   overflow: auto;
 }
 
 
-.searchFormWrapicon {
+.search-form-wrap-icon {
   background-color: #F2F2F2;
   padding: 16px 20px;
   border-radius: 16px 0 0 16px;
   text-align: center;
 }
 
-.searchFormWrapiconIcon {
+.search-form-wrap-icon-icon {
   margin-left: 1.6px;
 }
 
-.searchFormSearchinput {
+.ssearch-form-search-input {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
@@ -143,13 +143,13 @@ p {
 }
 
 
-.searchFormSearchinput::placeholder {
+.ssearch-form-search-input::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 16px;
   color: #00000069;
 }
 
-.searchFormSubmitinput {
+.search-form-submit-input {
   background-color: #0065FC;
   color: white;
   font-weight: bold;
@@ -160,33 +160,33 @@ p {
   cursor: pointer;
 }
 
-.MagnifyingglassIcon {
+.magnifying-glass-icon {
   display: none;
 }
 
-.searchFilters {
+.search-filters {
   display: flex;
   margin-top: 32px;
   flex-wrap: wrap;
 }
 
-.searchFiltersFilter {
+.search-filters-filter {
   display: flex;
 }
 
-.SeachFiltersFilterEandF {
+.search-filters-filter-e-and-f {
   display: flex;
   margin-right: 30px;
 }
 
-.searchFiltersTitle {
+.search-filters-title {
   font-size: 19px;
   margin: 0 32px 16px 0;
   display: flex;
   align-items: center;
 }
 
-.searchFiltersFilter {
+.search-filters-filter {
   display: flex;
   align-items: center;
   margin-right: 32px;
@@ -198,20 +198,20 @@ p {
   font-weight: bold;
 }
 
-.searchFiltersFilterA {
+.search-filters-filter-a {
   margin-left: 30px;
 }
 
-.searchFiltersFilter:last-child {
+.search-filters-filter:last-child {
   margin-right: 0;
 }
 
-.searchFiltersFilter:hover {
+.search-filters-filter:hover {
   background-color: #f3f8ff;
   transform: scale(1.015);
 }
 
-.searchFiltersFilterWrapicon {
+.search-filters-filter-wrap-icon-icon {
   background-color: #DEEBFF;
   border-radius: 100%;
   height: 48px;
@@ -224,21 +224,21 @@ p {
   margin: -2px;
 }
 
-.searchFiltersFilterWrapiconIcon {
+.search-filters-filter-wrap-icon-iconIcon {
   color: blue;
 }
 
-.searchFiltersFilterTitle {
+.search-filters-filter-title {
   margin: 0 16px;
 }
 
-.searchResult {
+.search-result {
   display: flex;
   align-items: center;
   margin: 16px 0 32px 0;
 }
 
-.searchResultWrapicon {
+.search-result-wrap-icon {
   height: 32px;
   width: 32px;
   min-height: 32px;
@@ -251,11 +251,11 @@ p {
   margin-right: 32px;
 }
 
-.searchResultWrapiconIcon {
+.search-result-wrap-icon-icon {
   color: #0065FC;
 }
 
-.searchResultText {
+.search-result-text {
   margin: 0;
 }
 
@@ -283,7 +283,7 @@ p {
 
 
 
-.hostingMain {
+.hosting-main {
   background-color: #F2F2F2;
   border-radius: 24px;
   padding: 32px;
@@ -292,18 +292,18 @@ p {
 }
 
 
-.hostingMain header {
+.hosting-main header {
   margin-bottom: 30px;
 }
 
 
-.hostingMain h2 {
+.hosting-main h2 {
   margin: 0;
 }
 
 
 
-.hostingMain article {
+.hosting-main article {
   background-color: white;
   padding: 6px;
   border-radius: 20px;
@@ -317,16 +317,16 @@ p {
 }
 
 
-.hostingMain article:hover,
-.hostingPopular article:hover {
+.hosting-main article:hover,
+.hosting-popular article:hover {
   transform: scale(1.02);
 }
 
-.hostingMain figure {
+.hosting-main figure {
   margin: 0;
 }
 
-.hostingMain img {
+.hosting-main img {
   height: 112px;
   object-fit: cover;
   max-width: 100%;
@@ -335,17 +335,17 @@ p {
   border-radius: 16px 16px 0 0;
 }
 
-.hostingMain h3 {
+.hosting-main h3 {
   margin: 4px 12px 0px 12px;
   font-size: 17.4px;
 }
 
-.hostingMain p {
+.hosting-main p {
   margin: 4px 12px 4px 12px;
   font-size: 15px;
 }
 
-.hostingMain ul {
+.hosting-main ul {
   margin: 0 12px 4px 12px;
 }
 
@@ -357,7 +357,7 @@ p {
   color: #d9d9d9;
 }
 
-.hostingMainViewMore {
+.hosting-main-view-more {
   font-weight: bold;
 }
 
@@ -366,17 +366,17 @@ p {
   #HOSTING POPULAR
 \*------------------------------------*/
 
-.hostingPopular aside {
+.hosting-popular aside {
   display: flex;
   justify-content: flex-end;
 }
 
 
-.hostingPopular header {
+.hosting-popular header {
   margin-top: 0px;
 }
 
-.hostingPopular h2 {
+.hosting-popular h2 {
   margin-top: 0;
   margin-bottom: 30px;
   display: flex;
@@ -384,27 +384,27 @@ p {
 }
 
 
-.hostingPopular h3 {
+.hosting-popular h3 {
   font-size: 17.4px;
   margin-bottom: 5px;
 }
 
 
-.hostingPopular p {
+.hosting-popular p {
   font-size: 15px;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
 
-.hostingPopular a {
+.hosting-popular a {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
 
-.hostingPopular figure {
+.hosting-popular figure {
   margin: 0;
   position: relative;
   min-height: 100%;
@@ -413,7 +413,7 @@ p {
   max-width: 37%;
 }
 
-.hostingPopular img {
+.hosting-popular img {
   border-radius: 16px 0 0 16px;
   position: absolute;
   width: 100%;
@@ -421,24 +421,24 @@ p {
   object-fit: cover;
 }
 
-.hostingPopularWrap {
+.hosting-popular-wrap {
   display: flex;
   flex-direction: column;
   margin-left: 14px;
   margin-right: 41px;
 }
 
-.hostingPopularWrapSpace {
+.hosting-popular-wrap-space {
   flex: 1;
 }
 
 
-.hostingPopularWrap ul {
+.hosting-popular-wrap ul {
   margin-left: 0px;
 }
 
 
-.hostingPopular article {
+.hosting-popular article {
   background-color: white;
   padding: 6px;
   border-radius: 20px;
@@ -450,7 +450,7 @@ p {
   margin-bottom: 25px;
 }
 
-.hostingPopular {
+.hosting-popular {
   background-color: #F2F2F2;
   border-radius: 24px;
   padding: 32px;
@@ -462,7 +462,7 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-.activityMain {
+.activity-main {
   margin-top: 60px;
   margin-bottom: 50px;
 }
@@ -472,7 +472,7 @@ p {
 }
 
 
-.activityMaincards {
+.activity-main-cards {
   display: flex;
 }
 
@@ -499,7 +499,7 @@ p {
   object-fit: cover;
 }
 
-.VieuxPortandFortdePomegues {
+.vieux-port-and-fort-de-pomegues {
   display: flex;
   width: 90%;
 }
@@ -515,18 +515,18 @@ p {
   object-fit: cover;
 }
 
-#un .activityWrapimg {
+#un .activity-wrap-img {
   width: 100%;
 
 }
 
 
-.activitydeuxtrois {
+.activity-deux-trois {
   width: 50%;
   margin: 40px;
 }
 
-.IleduFrioulandParcNationaldesCalanques {
+.ile-du-frioul-and-parc-national-des-calanques {
   display: flex;
   align-items: flex-end;
   margin-left: -105px;
@@ -546,25 +546,25 @@ p {
   object-fit: cover;
 }
 
-.activityWrapimg #deux {
+.activity-wrap-img #deux {
   height: 50%;
   width: 100%;
 }
 
-.activitydeux {
+.activity-deux {
   width: 80%;
   margin-bottom: 1px;
   margin-top: -35px;
 }
 
-.activitydeux {
+.activity-deux {
   box-shadow: 0 0 20px #0000002e;
   border-radius: 16px;
   overflow: hidden;
   transition-duration: 0.1s;
 }
 
-.activitydeux:hover {
+.activity-deux:hover {
   transform: scale(1.02);
 }
 
@@ -608,13 +608,13 @@ p {
   object-fit: cover;
 }
 
-#quatre .activityWrapimg {
+#quatre .activity-wrap-img {
   width: 100%;
 }
 
 
 
-.activitycinqsix {
+.activity-cinq-six {
   width: 35%;
   margin-left: 40px;
   margin-top: 40px;
@@ -627,20 +627,20 @@ p {
   object-fit: cover;
 }
 
-.activitycinq {
+.activity-cinq {
   box-shadow: 0 0 20px #0000002e;
   border-radius: 16px;
   overflow: hidden;
   transition-duration: 0.1s;
 }
 
-.activitycinq {
+.activity-cinq {
   width: 100%;
   margin-bottom: 60px;
   margin-top: -37px;
 }
 
-.activitycinq:hover {
+.activity-cinq:hover {
   transform: scale(1.02);
 }
 
@@ -679,7 +679,7 @@ p {
   width: 100%;
 }
 
-.footerWrapper {
+.footer-wrapper {
   display: flex;
   max-width: 100%;
   width: 1440px;
@@ -688,7 +688,7 @@ p {
   box-sizing: border-box;
 }
 
-.footerWrapperColumn {
+.footer-wrapper-column {
   padding: 30px 115px;
 }
 
@@ -714,17 +714,17 @@ p {
 \*------------------------------------*/
 
   .hosting,
-  .hostingPopular {
+  .hosting-popular {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .hostingPopular {
+  .hosting-popular {
     display: flex;
     flex-direction: column;
   }
 
-  .hostingPopular article {
+  .hosting-popular article {
     background-color: white;
     padding: 6px;
     width: 675px;
@@ -732,39 +732,39 @@ p {
     margin-bottom: 25px;
   }
 
-  .hostingPopular {
+  .hosting-popular {
     background-color: #F2F2F2;
     padding: 26px;
     width: 92%;
     border-radius: 24px;
   }
 
-  .hostingPopular h2 {
+  .hosting-popular h2 {
     margin-right: 4px;
   }
 
-  .hostingPopular figure {
+  .hosting-popular figure {
     margin: 0;
     position: relative;
     min-height: 100%;
     width: 33%;
   }
 
-  .hostingPopular img {
+  .hosting-popular img {
     border-radius: 16px 0 0 16px;
     position: absolute;
     width: 120%;
     height: 100%;
   }
 
-  .hostingPopularWrap {
+  .hosting-popular-wrap {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
     margin-right: 13px;
   }
 
-  .hostingPopularWrap1 {
+  .hosting-popular-wrap-1 {
     margin-top: 0px;
     margin-bottom: 15px;
   }
@@ -779,14 +779,14 @@ p {
     margin-left: 0;
   }
 
-  .hostingMain article {
+  .hosting-main article {
     background-color: white;
     padding: 6px;
     height: 100%;
     width: 48%;
   }
 
-  .hostingMain {
+  .hosting-main {
     margin-top: 35px;
     background-color: #F2F2F2;
     border-radius: 24px;
@@ -798,11 +798,11 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-  .activityMain {
+  .activity-main {
     margin-bottom: 15px;
   }
 
-  .activityMaincards {
+  .activity-main-cards {
     display: flex;
     flex-direction: column;
   }
@@ -811,12 +811,12 @@ p {
     width: 80%;
   }
 
-  .VieuxPortandFortdePomegues {
+  .vieux-port-and-fort-de-pomegues {
     display: flex;
   }
 
 
-  .IleduFrioulandParcNationaldesCalanques {
+  .ile-du-frioul-and-parc-national-des-calanques {
     display: flex;
   }
 
@@ -833,12 +833,12 @@ p {
     width: 100%;
   }
 
-  #un .activityWrapimg {
+  #un .activity-wrap-img {
     height: 50%;
     width: 100%;
   }
 
-  .activitydeux {
+  .activity-deux {
     width: 121%;
     margin-right: 0px;
     margin-left: 12px;
@@ -847,7 +847,7 @@ p {
 
   }
 
-  .activitydeuxtrois {
+  .activity-deux-trois {
     margin: 0;
     height: 60px;
   }
@@ -862,13 +862,13 @@ p {
     width: 100%;
   }
 
-  .activityWrapimg #deux {
+  .activity-wrap-img #deux {
     height: 50%;
     width: 100%;
   }
 
 
-  .activitydeux:hover {
+  .activity-deux:hover {
     transform: scale(1.02);
   }
 
@@ -900,13 +900,13 @@ p {
     width: 100%;
   }
 
-  #quatre .activityWrapimg {
+  #quatre .activity-wrap-img {
     height: 50%;
     width: 100%;
   }
 
 
-  .activitycinqsix {
+  .activity-cinq-six {
     display: flex;
     width: 98%;
     margin-left: 0px;
@@ -919,14 +919,14 @@ p {
   }
 
 
-  .activitycinq {
+  .activity-cinq {
     width: 103%;
     margin-top: 0px;
     margin-right: 38px;
     margin-left: 0px;
   }
 
-  .activitycinq:hover {
+  .activity-cinq:hover {
     transform: scale(1.02);
   }
 
@@ -947,7 +947,7 @@ p {
   #FOOTER
 \*------------------------------------*/
 
-  .footerWrapperColumn {
+  .footer-wrapper-column {
     padding: 30px 40px;
   }
 
@@ -997,7 +997,7 @@ p {
     border-top: none;
   }
 
-  .Activitynavbar1 {
+  .activity-navbar-1 {
     border-bottom: 3px #0065FC solid;
     border-top: none;
     color: #0065FC;
@@ -1007,7 +1007,7 @@ p {
     margin-top: 35px;
   }
 
-  .Activitynavbar1 a {
+  .activity-navbar-1 a {
     color: #0065FC;
     display: flex;
     justify-content: center;
@@ -1016,7 +1016,7 @@ p {
   }
 
 
-  .Activitynavbar2 a {
+  .activity-navbar-2 a {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
@@ -1024,7 +1024,7 @@ p {
   }
 
 
-  .Activitynavbar2 {
+  .activity-navbar-2 {
     display: inline-block;
     border-bottom: 3px #f2f2f2 solid;
     border-top: none;
@@ -1044,47 +1044,47 @@ p {
     margin-left: 25px;
   }
 
-  .searchHeaderTitle {
+  .search-header-title {
     margin-bottom: 8px;
     margin-top: 32px;
   }
 
-  .searchForm {
+  .search-form {
     margin-top: 30px;
   }
 
-  .searchFilters {
+  .search-filters {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
   }
 
-  .searchFiltersFilter {
+  .search-filters-filter {
     margin-right: 10px;
   }
 
-  .SeachFiltersFilterEandF {
+  .search-filters-filter-e-and-f {
     display: flex;
   }
 
-  .searchFiltersFilterA {
+  .search-filters-filter-a {
     margin-left: 0px;
     width: 66%;
   }
 
-  .searchFiltersFilterR {
+  .search-filters-filter-r {
     width: 52%;
   }
 
-  .searchFormSubmitinputText {
+  .search-form-submit-input-text {
     display: none;
   }
 
-  .MagnifyingglassIcon {
+  .magnifying-glass-icon {
     display: inline;
   }
 
-  .searchResultWrapicon {
+  .search-result-wrap-icon {
     margin-right: 15px;
   }
 
@@ -1093,46 +1093,46 @@ p {
 \*------------------------------------*/
 
   .hosting,
-  .hostingPopular {
+  .hosting-popular {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .hostingPopular {
+  .hosting-popular {
     display: flex;
     flex-direction: column;
   }
 
-  .hostingPopular article {
+  .hosting-popular article {
     background-color: white;
     padding: 6px;
     width: 100%;
     margin-bottom: 25px;
   }
 
-  .hostingPopular {
+  .hosting-popular {
     background-color: #F2F2F2;
     padding: 32px;
     width: 84%;
     border-radius: 0;
   }
 
-  .hostingPopular h2 {
+  .hosting-popular h2 {
     margin-right: 5px;
   }
 
-  .hostingPopular figure {
+  .hosting-popular figure {
     margin: 0;
     position: relative;
     min-height: 100%;
     width: 33%;
   }
 
-  .hostingPopular p {
+  .hosting-popular p {
     margin-bottom: 28px;
   }
 
-  .hostingPopular img {
+  .hosting-popular img {
     border-radius: 16px 0 0 16px;
     position: absolute;
     width: 120%;
@@ -1140,7 +1140,7 @@ p {
   }
 
 
-  .hostingPopularWrap {
+  .hosting-popular-wrap {
     display: flex;
     flex-direction: column;
     margin-left: 37px;
@@ -1158,25 +1158,25 @@ p {
   }
 
 
-  .AubergelaCannebiereandHotelduport {
+  .auberge-la-cannebiere-and-hotel-du-port {
     display: flex;
     flex-direction: column;
     width: 105%;
   }
 
-  .HotelLesmouettesandHoteldelamer {
+  .hotel-les-mouettes-and-hotel-de-la-mer {
     display: flex;
     flex-direction: column;
     width: 106%;
   }
 
-  .AubergeLePanierandHotelchezAmina {
+  .auberge-le-panier-and-hotel-chez-amina {
     display: flex;
     flex-direction: column;
     width: 106%;
   }
 
-  .hostingMain {
+  .hosting-main {
     background-color: white;
     border-radius: 24px;
     padding: 0px;
@@ -1186,7 +1186,7 @@ p {
   }
 
 
-  .hostingMain article {
+  .hosting-main article {
     background-color: white;
     padding: 6px;
     height: 100%;
@@ -1194,19 +1194,19 @@ p {
     margin-bottom: 25px;
   }
 
-  .hostingMain img {
+  .hosting-main img {
     height: 112px;
     width: 100%;
   }
 
 
 
-  .VieuxPortandFortdePomegues {
+  .vieux-port-and-fort-de-pomegues {
     display: flex;
     flex-direction: column;
   }
 
-  .IleduFrioulandParcNationaldesCalanques {
+  .ile-du-frioul-and-parc-national-des-calanques {
     display: flex;
     flex-direction: column;
     margin-left: -150px;
@@ -1216,11 +1216,11 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-  .activityMain {
+  .activity-main {
     margin-left: 26px;
   }
 
-  .activityMaincards {
+  .activity-main-cards {
     display: flex;
     flex-direction: column;
   }
@@ -1242,13 +1242,13 @@ p {
     width: 100%;
   }
 
-  #un .activityWrapimg {
+  #un .activity-wrap-img {
     height: 50%;
     width: 100%;
   }
 
 
-  .activitydeuxtrois {
+  .activity-deux-trois {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -1268,12 +1268,12 @@ p {
     width: 100%;
   }
 
-  .activityWrapimg #deux {
+  .activity-wrap-img #deux {
     height: 50%;
     width: 100%;
   }
 
-  .activitydeux {
+  .activity-deux {
     width: 108%;
     margin-bottom: 40px;
     margin-left: 0px;
@@ -1281,7 +1281,7 @@ p {
   }
 
 
-  .activitydeux:hover {
+  .activity-deux:hover {
     transform: scale(1.02);
   }
 
@@ -1317,13 +1317,13 @@ p {
     width: 100%;
   }
 
-  #quatre .activityWrapimg {
+  #quatre .activity-wrap-img {
     height: 50%;
     width: 100%;
   }
 
 
-  .activitycinqsix {
+  .activity-cinq-six {
     display: flex;
     flex-direction: column;
     width: 92%;
@@ -1338,13 +1338,13 @@ p {
   }
 
 
-  .activitycinq {
+  .activity-cinq {
     width: 100%;
     margin-bottom: 40px;
     margin-top: 0px;
   }
 
-  .activitycinq:hover {
+  .activity-cinq:hover {
     transform: scale(1.02);
   }
 
@@ -1364,7 +1364,7 @@ p {
   #FOOTER
 \*------------------------------------*/
 
-  .footerWrapper {
+  .footer-wrapper {
     display: flex;
     flex-direction: column;
     padding-left: 63px;
