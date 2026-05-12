@@ -701,7 +701,7 @@ p {
 }
 
 
-@media screen and (max-width : 992px) {
+@media (max-width: 1024px){
 
 
   .container {
@@ -953,7 +953,7 @@ p {
 
 }
 
-@media screen and (max-width : 768px) {
+@media (max-width: 768px) {
 
 
   body {
