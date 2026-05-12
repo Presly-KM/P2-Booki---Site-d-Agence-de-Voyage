@@ -128,7 +128,7 @@ p {
   margin-left: 1.6px;
 }
 
-.ssearch-form-search-input {
+.search-form-search-input {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
@@ -143,7 +143,7 @@ p {
 }
 
 
-.ssearch-form-search-input::placeholder {
+.search-form-search-input::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 16px;
   color: #00000069;
@@ -224,7 +224,7 @@ p {
   margin: -2px;
 }
 
-.search-filters-filter-wrap-icon-iconIcon {
+.search-filters-filter-wrap-icon-icon {
   color: blue;
 }
 
