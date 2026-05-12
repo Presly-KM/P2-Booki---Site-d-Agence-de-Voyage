@@ -922,18 +922,6 @@ p {
   }
 
 
-
-  .vieux-port-and-fort-de-pomegues {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ile-du-frioul-and-parc-national-des-calanques {
-    display: flex;
-    flex-direction: column;
-    margin-left: -150px;
-  }
-
 /*------------------------------------*\
   #MAIN-ACTIVITY
 \*------------------------------------*/
