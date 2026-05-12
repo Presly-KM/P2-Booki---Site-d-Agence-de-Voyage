@@ -473,7 +473,28 @@ p {
 
 
 .activity-main-cards {
-  display: flex;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Un bel espace de 30px entre chaque carte */
+}
+
+
+/* Style générique pour tes 4 cartes d'activité */
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%;
+    background-color: white; /* Pour le fond des cartes */
+    border-radius: 20px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Pour que l'image ne dépasse pas de l'arrondi */
+}
+
+.activity-card img {
+    height: 380px; /* On fixe une hauteur commune comme demandé par Sarah */
+    width: 100%;
+    object-fit: cover; /* Pour que l'image remplisse le cadre sans se déformer */
 }
 
 
@@ -499,176 +520,7 @@ p {
   object-fit: cover;
 }
 
-.vieux-port-and-fort-de-pomegues {
-  display: flex;
-  width: 90%;
-}
 
-#un {
-  width: 40%;
-  height: 100%;
-}
-
-#un img {
-  height: 430px;
-  width: 100%;
-  object-fit: cover;
-}
-
-#un .activity-wrap-img {
-  width: 100%;
-
-}
-
-
-.activity-deux-trois {
-  width: 50%;
-  margin: 40px;
-}
-
-.ile-du-frioul-and-parc-national-des-calanques {
-  display: flex;
-  align-items: flex-end;
-  margin-left: -105px;
-  margin-top: -70px;
-}
-
-
-#deux {
-  width: 40%;
-  height: 100%;
-
-}
-
-#deux img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activity-wrap-img #deux {
-  height: 50%;
-  width: 100%;
-}
-
-.activity-deux {
-  width: 80%;
-  margin-bottom: 1px;
-  margin-top: -35px;
-}
-
-.activity-deux {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activity-deux:hover {
-  transform: scale(1.02);
-}
-
-
-#trois img {
-  height: 125px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activitytrois {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activitytrois {
-  margin-top: -20px;
-  width: 89%;
-  margin-left: -326px;
-  height: 35%;
-}
-
-
-.activitytrois:hover {
-  transform: scale(1.02);
-}
-
-
-#quatre {
-  width: 93%;
-  height: 87%;
-  margin-left: 40px;
-
-}
-
-#quatre img {
-  height: 430px;
-  width: 100%;
-  object-fit: cover;
-}
-
-#quatre .activity-wrap-img {
-  width: 100%;
-}
-
-
-
-.activity-cinq-six {
-  width: 35%;
-  margin-left: 40px;
-  margin-top: 40px;
-}
-
-
-#cinq img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activity-cinq {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activity-cinq {
-  width: 100%;
-  margin-bottom: 60px;
-  margin-top: -37px;
-}
-
-.activity-cinq:hover {
-  transform: scale(1.02);
-}
-
-
-#six img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-.activitysix {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-
-.activitysix {
-  width: 100%;
-  margin-top: 0;
-}
-
-
-.activitysix:hover {
-  transform: scale(1.02);
-}
 
 /*------------------------------------*\
   #FOOTER
@@ -811,137 +663,7 @@ p {
     width: 80%;
   }
 
-  .vieux-port-and-fort-de-pomegues {
-    display: flex;
-  }
-
-
-  .ile-du-frioul-and-parc-national-des-calanques {
-    display: flex;
-  }
-
-
-  #un {
-    width: 58%;
-    height: 100%;
-    margin-right: 35px;
-    margin-bottom: 30px;
-  }
-
-  #un img {
-    height: 149px;
-    width: 100%;
-  }
-
-  #un .activity-wrap-img {
-    height: 50%;
-    width: 100%;
-  }
-
-  .activity-deux {
-    width: 121%;
-    margin-right: 0px;
-    margin-left: 12px;
-    margin-bottom: 30px;
-    margin-top: 0;
-
-  }
-
-  .activity-deux-trois {
-    margin: 0;
-    height: 60px;
-  }
-
-  #deux {
-    width: 30%;
-    height: 90%;
-  }
-
-  #deux img {
-    height: 149px;
-    width: 100%;
-  }
-
-  .activity-wrap-img #deux {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activity-deux:hover {
-    transform: scale(1.02);
-  }
-
-  #trois img {
-    height: 151px;
-    width: 100%;
-  }
-
-  .activitytrois {
-    width: 397px;
-    margin-top: 79px;
-    margin-left: 103px;
-    margin-right: 0px;
-    height: 214px;
-  }
-
-  .activitytrois:hover {
-    transform: scale(1.02);
-  }
-
-  #quatre {
-    width: 49%;
-    height: 100%;
-    margin-left: 47px;
-  }
-
-  #quatre img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #quatre .activity-wrap-img {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activity-cinq-six {
-    display: flex;
-    width: 98%;
-    margin-left: 0px;
-  }
-
-
-  #cinq img {
-    height: 149px;
-    width: 100%;
-  }
-
-
-  .activity-cinq {
-    width: 103%;
-    margin-top: 0px;
-    margin-right: 38px;
-    margin-left: 0px;
-  }
-
-  .activity-cinq:hover {
-    transform: scale(1.02);
-  }
-
-  #six img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitysix {
-    width: 109%;
-    margin-right: -15px;
-    margin-left: 11px;
-    height: 212px;
-
-  }
+  
 
 /*------------------------------------*\
   #FOOTER
@@ -1221,8 +943,12 @@ p {
   }
 
   .activity-main-cards {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Les cartes se mettent l'une sous l'autre */
+    gap: 20px;
+  }
+
+  .activity-card img {
+    height: 150px; /* On réduit la hauteur de l'image sur mobile pour gagner de la place */
   }
 
   .activity img {
@@ -1230,135 +956,7 @@ p {
   }
 
 
-  #un {
-    width: 103%;
-    height: 100%;
-    margin: 0;
-    margin-bottom: 45px;
-  }
-
-  #un img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #un .activity-wrap-img {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activity-deux-trois {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 0;
-    height: 255px;
-  }
-
-
-  #deux {
-    width: 50%;
-    height: 100%;
-
-  }
-
-  #deux img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activity-wrap-img #deux {
-    height: 50%;
-    width: 100%;
-  }
-
-  .activity-deux {
-    width: 108%;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    margin-top: 0;
-  }
-
-
-  .activity-deux:hover {
-    transform: scale(1.02);
-  }
-
-
-  #trois img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitytrois {
-    width: 65%;
-    margin-right: 27px;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-
-
-  .activitytrois:hover {
-    transform: scale(1.02);
-  }
-
-
-  #quatre {
-    width: 65%;
-    height: 100%;
-    margin-bottom: 40px;
-    margin-left: -49px;
-    margin-right: 29px;
-  }
-
-  #quatre img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #quatre .activity-wrap-img {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activity-cinq-six {
-    display: flex;
-    flex-direction: column;
-    width: 92%;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-
-  #cinq img {
-    height: 150px;
-    width: 100%;
-  }
-
-
-  .activity-cinq {
-    width: 100%;
-    margin-bottom: 40px;
-    margin-top: 0px;
-  }
-
-  .activity-cinq:hover {
-    transform: scale(1.02);
-  }
-
-
-  #six img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitysix {
-    width: 100%;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
+  
 
 /*------------------------------------*\
   #FOOTER
