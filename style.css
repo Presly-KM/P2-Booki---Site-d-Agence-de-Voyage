@@ -246,6 +246,19 @@ p {
     width: calc(33.33% - 20px); /* 3 colonnes */
 }
 
+.hebergements-more {
+    display: inline-block; /* Permet d'appliquer des marges correctement */
+    margin-top: 30px;      /* Crée l'espace avec les cartes au-dessus */
+    font-weight: bold;     /* Texte en gras comme sur la maquette */
+    font-size: 18px;       /* Taille légèrement plus grande pour la lisibilité */
+    color: black;          /* Assure que le lien reste noir */
+    text-decoration: none;
+}
+
+.hebergements-more:hover {
+    text-decoration: underline; /* Optionnel : souligne au survol pour l'UX */
+}
+
 /* CARTES POPULAIRES (Droite) */
 .populaires {
     width: 33%;
