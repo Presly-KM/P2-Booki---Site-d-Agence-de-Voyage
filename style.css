@@ -709,8 +709,11 @@ p {
 }
 
 
-@media screen and (max-width : 992px) {
-
+/* TABLETTE : On passe de 992px à 1024px */
+@media screen and (max-width: 1024px) {
+    .main-container {
+        padding: 0 20px; /* On réduit un peu les marges sur tablette */
+    }
 
 
 /*------------------------------------*\
@@ -957,7 +960,10 @@ p {
 
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 0; /* Souvent 0 sur mobile pour utiliser toute la largeur */
+    }
 
 
   body {
