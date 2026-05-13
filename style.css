@@ -423,18 +423,19 @@ p {
 \*------------------------------------*/
 
 .hebergements-and-populaires {
-    flex-direction: column; /* On empile les deux sections verticalement */
-    gap: 20px; /* <--- AJOUTE CETTE LIGNE ICI */
-}
+        flex-direction: column;
+        gap: 30px;
+    }
 
-.hebergements {
-    width: 100%; /* Prend toute la largeur */
-}
+    .hebergements, .populaires {
+        width: 100%;
+    }
 
-.populaires {
-    width: 100%; /* Prend toute la largeur */
-    order: -1;   /* OPTIONNEL : Met "Les plus populaires" en haut si la maquette le demande */
-}
+    /* Sur tablette, on peut passer à 2 colonnes pour les hébergements si besoin, 
+       mais le Figma montre souvent une adaptation fluide */
+    .hebergements-cards .card {
+        width: calc(50% - 15px); /* Passage à 2 colonnes pour plus de confort */
+    }
 
 /*------------------------------------*\
   #HOSTING POPULAR
@@ -459,111 +460,120 @@ p {
 \*------------------------------------*/
 
   .footerWrapperColumn {
-    padding: 30px 40px;
-  }
+        padding: 30px 20px;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
     .main-container {
-        padding: 0; /* Souvent 0 sur mobile pour utiliser toute la largeur */
-    }
-
-
-  body {
-    margin: 0;
-  }
-
-  .header {
-        flex-direction: column;
         padding: 0;
     }
 
+    /* HEADER : Navigation l'une à côté de l'autre avec bordure en bas */
+    .header {
+        flex-direction: column;
+        padding: 0;
+    }
     .logo {
         margin: 30px 0;
     }
-
     .navbar {
-        width: 100%; /* La nav prend toute la largeur */
+        width: 100%;
     }
-
     .nav-link {
-        flex: 1; /* Les deux liens prennent 50% de la largeur chacun */
+        flex: 1;
         text-align: center;
         padding: 15px 0;
-        border-top: none; /* On annule la bordure du haut */
-        border-bottom: 3px solid var(--main-bg-color); /* Bordure grise par défaut */
+        border-top: none;
+        border-bottom: 3px solid var(--main-bg-color);
     }
-
     .nav-link:hover {
         border-top: none;
-        border-bottom: 3px solid var(--main-color); /* Bordure bleue en bas sur mobile */
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    /* RECHERCHE : Transformation du bouton en Loupe */
+    .search {
+        padding: 0 20px; /* On redonne de la marge interne */
+    }
+    .search-form-submit .submit-text {
+        display: none; /* Cache "Rechercher" */
+    }
+    .search-form-submit .submit-icon {
+        display: inline-block; /* Affiche la loupe */
+    }
+    .search-form-submit {
+        border-radius: 15px; /* Devient un carré arrondi */
+        padding: 0 15px;
+    }
+
+    /* FILTRES : Alignement */
+    .filters-title {
+        width: 100%; /* Le titre "Filtres" prend toute la ligne */
+        margin-bottom: 15px;
+    }
+
+    /* LAYOUT : Populaires en haut, Hébergements en bas */
+    .hebergements-and-populaires {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .populaires {
+        order: -1; /* Met les populaires en premier */
+        border-radius: 0;
+    }
+
+    .hebergements {
+        background-color: white !important; /* Fond blanc sur mobile selon Figma */
+        border-radius: 0;
+    }
+
+    .hebergements-cards .card {
+        width: 100%; /* 1 seule carte par ligne */
     }
 
 
-/*------------------------------------*\
-  #MAIN-SEARCH
-\*------------------------------------*/
-  
+    /*------------------------------------*\
+      #MAIN-ACTIVITY (MOBILE)
+    \*------------------------------------*/
 
+    .activity {
+        padding: 30px 20px; /* On ajoute 20px de marge à gauche et à droite */
+    }
 
-/*------------------------------------*\
-  #HEBERGEMENTS & POPULAIRES (MOBILE)
-\*------------------------------------*/
+    .activity-main-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-.hebergements-and-populaires {
-    gap: 0; /* On colle les sections sur mobile */
-}
+    .activity-card {
+        width: 100%;
+        /* L'ombre et l'arrondi sont déjà hérités du desktop, c'est parfait */
+    }
 
-.hebergements-and-populaires section {
-    border-radius: 0; /* Souvent on retire l'arrondi sur les bords du téléphone */
-    padding: 30px 20px;
-}
+    .activity-card img {
+        height: 200px; /* On remonte un peu à 200px pour mieux voir les photos */
+        width: 100%;
+        object-fit: cover;
+    }
 
-.hebergements-cards .card {
-    width: 100%; /* Une seule carte par ligne sur mobile */
-}
+    .activity-card img {
+        /* On réduit la hauteur pour aplatir l'image (format plus panoramique) */
+        height: 160px; /* <--- Change 200px par 160px */
+        
+        /* Width: 100% et object-fit: cover sont déjà hérités, 
+           donc l'image ne sera pas déformée, juste recadrée proprement */
+    }
 
-.hebergements {
-    background-color: white !important; /* Souvent la section principale repasse en blanc sur mobile */
-}
-
-/* Assure que les cartes populaires restent horizontales et compactes */
-.populaires-cards .card a {
-        height: 144px; /* Hauteur fixe pour éviter que l'image ne s'étire */
-}
-
-.populaires-cards .card img {
-        width: 33%; /* L'image prend un tiers de la largeur */
-        height: 100%;
-}
-
-/*------------------------------------*\
-  #HOSTING POPULAR
-\*------------------------------------*/
-
-  
-
-/*------------------------------------*\
-  #MAIN-HOSTING
-\*------------------------------------*/
-
-  
-
-/*------------------------------------*\
-  #MAIN-ACTIVITY
-\*------------------------------------*/
-
-  
-
-/*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-  .footerWrapper {
-    display: flex;
-    flex-direction: column;
-    padding-left: 63px;
-  }
-
+    /* FOOTER : Empilement */
+    .footerWrapper {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .footerWrapperColumn {
+        padding: 15px 0;
+    }
 }
