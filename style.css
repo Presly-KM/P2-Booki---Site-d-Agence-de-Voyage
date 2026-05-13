@@ -411,6 +411,7 @@ p {
 
 .hebergements-and-populaires {
     flex-direction: column; /* On empile les deux sections verticalement */
+    gap: 20px; /* <--- AJOUTE CETTE LIGNE ICI */
 }
 
 .hebergements {
@@ -514,6 +515,15 @@ p {
     background-color: white !important; /* Souvent la section principale repasse en blanc sur mobile */
 }
 
+/* Assure que les cartes populaires restent horizontales et compactes */
+.populaires-cards .card a {
+        height: 144px; /* Hauteur fixe pour éviter que l'image ne s'étire */
+}
+
+.populaires-cards .card img {
+        width: 33%; /* L'image prend un tiers de la largeur */
+        height: 100%;
+}
 
 /*------------------------------------*\
   #HOSTING POPULAR
