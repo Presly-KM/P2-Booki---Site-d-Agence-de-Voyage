@@ -213,20 +213,25 @@ p {
   #HEBERGEMENTS & POPULAIRES
 \*------------------------------------*/
 
+/*------------------------------------*\
+  #HEBERGEMENTS & POPULAIRES (CORRIGÉ)
+\*------------------------------------*/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires section, 
+.hebergements-and-populaires aside {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/* HEBERGEMENTS */
+/* GRILLE HEBERGEMENTS (Gauche) */
 .hebergements {
     width: 66%;
 }
@@ -238,35 +243,18 @@ p {
 }
 
 .hebergements-cards .card {
-    width: calc(33.33% - 20px); /* 3 colonnes exactes */
+    width: calc(33.33% - 20px); /* 3 colonnes */
 }
 
-/* POPULAIRES */
+/* CARTES POPULAIRES (Droite) */
 .populaires {
     width: 33%;
-    display: flex;
-    flex-direction: column;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.populaires-title i {
-    color: var(--main-color);
 }
 
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.populaires-cards .card {
-    display: flex;
-    height: 144px;
+    gap: 20px;
 }
 
 /* STYLE COMMUN DES CARTES */
@@ -274,34 +262,60 @@ p {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-.card img {
+/* L'élément clé : le lien à l'intérieur de la carte */
+.card a {
+    display: flex;
+    flex-direction: column; /* Image en haut, texte en bas par défaut */
+    width: 100%;
+    height: 100%;
+}
+
+/* Spécifique aux Populaires : Image à gauche, texte à droite */
+.populaires-cards .card a {
+    flex-direction: row;
+    height: 144px;
+}
+
+/* GESTION DES IMAGES (Le fix pour tes captures) */
+.hebergements-cards .card img {
+    height: 120px; /* On limite enfin la hauteur ! */
+    width: 100%;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
-.populaires-cards img {
+.populaires-cards .card img {
     width: 33%;
     height: 100%;
-    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
 }
 
+/* CONTENU DU TEXTE */
 .card-content {
-    padding-left: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card-title {
     font-size: 16px;
-    margin: 10px 0 5px 0;
+    margin: 0 0 5px 0;
+}
+
+.card-subtitle {
+    margin: 0;
+    font-size: 14px;
 }
 
 .card-rating {
-    margin-bottom: 5px;
+    margin-top: 5px;
     color: var(--main-color);
 }
 
