@@ -1,3 +1,10 @@
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBF7; /* Version 2026 */
+}
+
+
 @font-face {
   font-family: 'Raleway-VariableFont_wght';
   src: url('Raleway-VariableFont_wght.ttf');
