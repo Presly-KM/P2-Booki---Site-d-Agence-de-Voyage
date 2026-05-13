@@ -10,6 +10,17 @@
   src: url('Raleway-VariableFont_wght.ttf');
 }
 
+/* On fusionne et on applique les limites officielles */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px; /* Sécurité mobile */
+    margin: 0 auto;
+    padding: 0 50px; /* Espacement standard sur les côtés */
+    box-sizing: border-box;
+}
+
+
 body {
   font-family: Raleway-VariableFont_wght, Arial;
 }
@@ -89,21 +100,11 @@ p {
   color: black;
 }
 
-.container {
-  max-width: 1355px;
-  margin: auto;
-}
 
 /*------------------------------------*\
   #MAIN
 \*------------------------------------*/
 
-.main {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 32px;
-  box-sizing: border-box;
-}
 
 /*------------------------------------*\
   #MAIN-SEARCH
@@ -711,10 +712,6 @@ p {
 @media screen and (max-width : 992px) {
 
 
-  .container {
-    max-width: 730px;
-    margin: auto;
-  }
 
 /*------------------------------------*\
   #HOSTING POPULAR
@@ -965,15 +962,6 @@ p {
 
   body {
     margin: 0;
-  }
-
-  .container {
-    max-width: 375px;
-    margin: auto;
-  }
-
-  .main {
-    padding: 0;
   }
 
   nav {
