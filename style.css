@@ -470,212 +470,43 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-.activityMain {
-  margin-top: 60px;
-  margin-bottom: 50px;
+.activity-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.activity header {
-  margin-bottom: 30px;
+.activity-main-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espace constant entre les cartes */
 }
 
-
-.activityMaincards {
-  display: flex;
+.activity-card {
+    flex: 1; /* Force les 4 cartes à avoir exactement la même largeur */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Pour que l'image respecte l'arrondi de la carte */
+    display: flex;
 }
 
-
-.activity a {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
+.activity-card a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-.activity a:hover {
-  transform: scale(1.02);
+.activity-card img {
+    height: 380px; /* Hauteur fixe pour que toutes les cartes soient égales */
+    width: 100%;
+    object-fit: cover; /* Recadre l'image sans la déformer */
 }
 
-
-.activity h3 {
-  margin: 19.2px 24px;
-}
-
-
-.activity img {
-  width: 80%;
-  object-fit: cover;
-}
-
-.VieuxPortandFortdePomegues {
-  display: flex;
-  width: 90%;
-}
-
-#un {
-  width: 40%;
-  height: 100%;
-}
-
-#un img {
-  height: 430px;
-  width: 100%;
-  object-fit: cover;
-}
-
-#un .activityWrapimg {
-  width: 100%;
-
-}
-
-
-.activitydeuxtrois {
-  width: 50%;
-  margin: 40px;
-}
-
-.IleduFrioulandParcNationaldesCalanques {
-  display: flex;
-  align-items: flex-end;
-  margin-left: -105px;
-  margin-top: -70px;
-}
-
-
-#deux {
-  width: 40%;
-  height: 100%;
-
-}
-
-#deux img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activityWrapimg #deux {
-  height: 50%;
-  width: 100%;
-}
-
-.activitydeux {
-  width: 80%;
-  margin-bottom: 1px;
-  margin-top: -35px;
-}
-
-.activitydeux {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activitydeux:hover {
-  transform: scale(1.02);
-}
-
-
-#trois img {
-  height: 125px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activitytrois {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activitytrois {
-  margin-top: -20px;
-  width: 89%;
-  margin-left: -326px;
-  height: 35%;
-}
-
-
-.activitytrois:hover {
-  transform: scale(1.02);
-}
-
-
-#quatre {
-  width: 93%;
-  height: 87%;
-  margin-left: 40px;
-
-}
-
-#quatre img {
-  height: 430px;
-  width: 100%;
-  object-fit: cover;
-}
-
-#quatre .activityWrapimg {
-  width: 100%;
-}
-
-
-
-.activitycinqsix {
-  width: 35%;
-  margin-left: 40px;
-  margin-top: 40px;
-}
-
-
-#cinq img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.activitycinq {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-.activitycinq {
-  width: 100%;
-  margin-bottom: 60px;
-  margin-top: -37px;
-}
-
-.activitycinq:hover {
-  transform: scale(1.02);
-}
-
-
-#six img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-.activitysix {
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 0.1s;
-}
-
-
-.activitysix {
-  width: 100%;
-  margin-top: 0;
-}
-
-
-.activitysix:hover {
-  transform: scale(1.02);
+.activity-card-title {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /*------------------------------------*\
@@ -805,150 +636,7 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-  .activityMain {
-    margin-bottom: 15px;
-  }
-
-  .activityMaincards {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .activity img {
-    width: 80%;
-  }
-
-  .VieuxPortandFortdePomegues {
-    display: flex;
-  }
-
-
-  .IleduFrioulandParcNationaldesCalanques {
-    display: flex;
-  }
-
-
-  #un {
-    width: 58%;
-    height: 100%;
-    margin-right: 35px;
-    margin-bottom: 30px;
-  }
-
-  #un img {
-    height: 149px;
-    width: 100%;
-  }
-
-  #un .activityWrapimg {
-    height: 50%;
-    width: 100%;
-  }
-
-  .activitydeux {
-    width: 121%;
-    margin-right: 0px;
-    margin-left: 12px;
-    margin-bottom: 30px;
-    margin-top: 0;
-
-  }
-
-  .activitydeuxtrois {
-    margin: 0;
-    height: 60px;
-  }
-
-  #deux {
-    width: 30%;
-    height: 90%;
-  }
-
-  #deux img {
-    height: 149px;
-    width: 100%;
-  }
-
-  .activityWrapimg #deux {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activitydeux:hover {
-    transform: scale(1.02);
-  }
-
-  #trois img {
-    height: 151px;
-    width: 100%;
-  }
-
-  .activitytrois {
-    width: 397px;
-    margin-top: 79px;
-    margin-left: 103px;
-    margin-right: 0px;
-    height: 214px;
-  }
-
-  .activitytrois:hover {
-    transform: scale(1.02);
-  }
-
-  #quatre {
-    width: 49%;
-    height: 100%;
-    margin-left: 47px;
-  }
-
-  #quatre img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #quatre .activityWrapimg {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activitycinqsix {
-    display: flex;
-    width: 98%;
-    margin-left: 0px;
-  }
-
-
-  #cinq img {
-    height: 149px;
-    width: 100%;
-  }
-
-
-  .activitycinq {
-    width: 103%;
-    margin-top: 0px;
-    margin-right: 38px;
-    margin-left: 0px;
-  }
-
-  .activitycinq:hover {
-    transform: scale(1.02);
-  }
-
-  #six img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitysix {
-    width: 109%;
-    margin-right: -15px;
-    margin-left: 11px;
-    height: 212px;
-
-  }
+  
 
 /*------------------------------------*\
   #FOOTER
@@ -1217,149 +905,7 @@ p {
   #MAIN-ACTIVITY
 \*------------------------------------*/
 
-  .activityMain {
-    margin-left: 26px;
-  }
-
-  .activityMaincards {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .activity img {
-    width: 80%;
-  }
-
-
-  #un {
-    width: 103%;
-    height: 100%;
-    margin: 0;
-    margin-bottom: 45px;
-  }
-
-  #un img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #un .activityWrapimg {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activitydeuxtrois {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 0;
-    height: 255px;
-  }
-
-
-  #deux {
-    width: 50%;
-    height: 100%;
-
-  }
-
-  #deux img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activityWrapimg #deux {
-    height: 50%;
-    width: 100%;
-  }
-
-  .activitydeux {
-    width: 108%;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    margin-top: 0;
-  }
-
-
-  .activitydeux:hover {
-    transform: scale(1.02);
-  }
-
-
-  #trois img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitytrois {
-    width: 65%;
-    margin-right: 27px;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-
-
-  .activitytrois:hover {
-    transform: scale(1.02);
-  }
-
-
-  #quatre {
-    width: 65%;
-    height: 100%;
-    margin-bottom: 40px;
-    margin-left: -49px;
-    margin-right: 29px;
-  }
-
-  #quatre img {
-    height: 150px;
-    width: 100%;
-  }
-
-  #quatre .activityWrapimg {
-    height: 50%;
-    width: 100%;
-  }
-
-
-  .activitycinqsix {
-    display: flex;
-    flex-direction: column;
-    width: 92%;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-
-  #cinq img {
-    height: 150px;
-    width: 100%;
-  }
-
-
-  .activitycinq {
-    width: 100%;
-    margin-bottom: 40px;
-    margin-top: 0px;
-  }
-
-  .activitycinq:hover {
-    transform: scale(1.02);
-  }
-
-
-  #six img {
-    height: 150px;
-    width: 100%;
-  }
-
-  .activitysix {
-    width: 100%;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
+  
 
 /*------------------------------------*\
   #FOOTER
