@@ -1,3 +1,18 @@
+/* Suppression des marges et paddings par défaut ajoutés par le navigateur */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustement du conteneur principal */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px; /* On garde le padding sur les côtés, mais 0 en haut/bas */
+    box-sizing: border-box;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -54,18 +69,20 @@ p {
 
 
 /*------------------------------------*\
-  #HEADER
+  #HEADER (OPTIMISATION PLAFOND)
 \*------------------------------------*/
 
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 0; /* Un peu d'air au-dessus et en-dessous */
+    align-items: flex-start; /* Aligne tout en haut (le "plafond") */
+    padding: 0;
+    height: 90px; /* On fixe une hauteur pour stabiliser le layout */
 }
 
 .logo {
-    height: 19px; /* Taille exacte de la maquette */
+    margin-top: 30px; /* Le logo garde sa position visuelle habituelle */
+    height: 19px;
 }
 
 .navbar {
@@ -73,15 +90,16 @@ p {
 }
 
 .nav-link {
-    padding: 30px 30px 0 30px; /* On laisse de la place pour la bordure du haut */
+    padding: 15px 30px 0 30px; /* On réduit le padding top pour remonter le texte */
     text-decoration: none;
     color: black;
-    border-top: 2px solid transparent; /* Bordure invisible par défaut */
+    border-top: 2px solid transparent; /* Le trait est tout en haut du lien */
+    transition: 0.2s;
 }
 
 .nav-link:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color); /* La bordure devient bleue au survol */
+    border-top: 2px solid var(--main-color); /* Le trait se colle au bord supérieur */
 }
 
 
