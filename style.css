@@ -359,6 +359,12 @@ p {
     box-sizing: border-box;
 }
 
+/* Espacement sous le titre des activités */
+.activity h2 {
+    margin-top: 0;
+    margin-bottom: 30px; /* Aligne l'espacement sur celui des Hébergements */
+}
+
 .activity-main-cards {
     display: flex;
     justify-content: space-between;
