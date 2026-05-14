@@ -348,40 +348,45 @@ p {
 
 
 /*------------------------------------*\
-  #MAIN-ACTIVITY
+  #MAIN-ACTIVITY (DESKTOP)
 \*------------------------------------*/
 
+.activity {
+    /* 1. Éloigne la section du bloc "Hébergements" au-dessus */
+    margin-top: 60px; 
+    
+    /* 2. Indente toute la section de 30px. 
+       Cela aligne verticalement le titre "Activités" avec le titre "Hébergements" 
+       et resserre les cartes vers l'intérieur. */
+    padding: 0 30px; 
+    
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
 .activity-main {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0; /* On annule l'ancienne marge pour utiliser celle du parent */
 }
 
 .activity-main-cards {
     display: flex;
     justify-content: space-between;
-    gap: 30px; /* Espace constant entre les cartes */
+    gap: 30px;
 }
 
 .activity-card {
-    flex: 1; /* Force les 4 cartes à avoir exactement la même largeur */
+    flex: 1;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Pour que l'image respecte l'arrondi de la carte */
+    overflow: hidden;
     display: flex;
-}
-
-.activity-card a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
 }
 
 .activity-card img {
-    height: 380px; /* Hauteur fixe pour que toutes les cartes soient égales */
+    height: 380px; 
     width: 100%;
-    object-fit: cover; /* Recadre l'image sans la déformer */
+    object-fit: cover;
 }
 
 .activity-card-title {
