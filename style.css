@@ -214,7 +214,7 @@ p {
 \*------------------------------------*/
 
 /*------------------------------------*\
-  #HEBERGEMENTS & POPULAIRES (CORRIGÉ)
+  #HEBERGEMENTS & POPULAIRES (ALIGNÉ)
 \*------------------------------------*/
 
 .hebergements-and-populaires {
@@ -227,13 +227,19 @@ p {
 .hebergements-and-populaires aside {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 30px; /* Base d'alignement : 30px partout */
     box-sizing: border-box;
 }
 
-/* GRILLE HEBERGEMENTS (Gauche) */
+/* 1. HEBERGEMENTS (Gauche) */
 .hebergements {
     width: 66%;
+}
+
+/* Alignement du titre de gauche */
+.hebergements .section-title {
+    margin-top: 0;       /* Supprime la marge par défaut pour coller au padding de 30px */
+    margin-bottom: 30px;  /* Espace équilibré avant les cartes */
 }
 
 .hebergements-cards {
@@ -243,34 +249,42 @@ p {
 }
 
 .hebergements-cards .card {
-    width: calc(33.33% - 20px); /* 3 colonnes */
+    width: calc(33.33% - 20px);
 }
 
 .hebergements-more {
-    display: inline-block; /* Permet d'appliquer des marges correctement */
-    margin-top: 30px;      /* Crée l'espace avec les cartes au-dessus */
-    font-weight: bold;     /* Texte en gras comme sur la maquette */
-    font-size: 18px;       /* Taille légèrement plus grande pour la lisibilité */
-    color: black;          /* Assure que le lien reste noir */
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
     text-decoration: none;
 }
 
-.hebergements-more:hover {
-    text-decoration: underline; /* Optionnel : souligne au survol pour l'UX */
-}
-
-/* CARTES POPULAIRES (Droite) */
+/* 2. POPULAIRES (Droite) */
 .populaires {
     width: 33%;
+}
+
+/* Alignement du bloc titre de droite */
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Même marge que le titre de gauche pour aligner les premières cartes */
+}
+
+.populaires-title .section-title {
+    margin: 0; /* On laisse le parent gérer l'espace */
 }
 
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 33px; /* Gap légèrement augmenté pour aligner le bas des deux blocs gris */
 }
 
-/* STYLE COMMUN DES CARTES */
+/* 3. STYLE COMMUN DES CARTES (Tes réglages qui fonctionnent) */
 .card {
     background-color: white;
     border-radius: 20px;
@@ -279,23 +293,20 @@ p {
     box-sizing: border-box;
 }
 
-/* L'élément clé : le lien à l'intérieur de la carte */
 .card a {
     display: flex;
-    flex-direction: column; /* Image en haut, texte en bas par défaut */
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-/* Spécifique aux Populaires : Image à gauche, texte à droite */
 .populaires-cards .card a {
     flex-direction: row;
     height: 144px;
 }
 
-/* GESTION DES IMAGES (Le fix pour tes captures) */
 .hebergements-cards .card img {
-    height: 120px; /* On limite enfin la hauteur ! */
+    height: 120px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -308,7 +319,6 @@ p {
     border-radius: 15px 0 0 15px;
 }
 
-/* CONTENU DU TEXTE */
 .card-content {
     padding: 10px;
     display: flex;
