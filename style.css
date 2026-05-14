@@ -94,12 +94,12 @@ p {
     text-decoration: none;
     color: black;
     border-top: 2px solid transparent; /* Le trait est tout en haut du lien */
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .nav-link:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color); /* Le trait se colle au bord supérieur */
+    border-top: 3px solid var(--main-color); /* Le trait se colle au bord supérieur */
 }
 
 
@@ -511,7 +511,7 @@ p {
 
 @media screen and (max-width: 768px) {
     .main-container {
-        padding: 0;
+        padding: 0;    /* Plus de marges blanches sur les côtés du conteneur global */
     }
 
     /* HEADER : Navigation l'une à côté de l'autre avec bordure en bas */
