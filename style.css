@@ -511,72 +511,124 @@ p {
 
 @media screen and (max-width: 768px) {
     .main-container {
-        padding: 0;    /* Plus de marges blanches sur les côtés du conteneur global */
+        padding: 0; 
     }
 
-    /* HEADER : Navigation l'une à côté de l'autre avec bordure en bas */
+    /* HEADER : On libère la hauteur et on centre */
     .header {
         flex-direction: column;
+        align-items: center; /* Aligne le logo au centre */
+        height: auto;        /* ANNULE les 90px du desktop */
         padding: 0;
     }
+
     .logo {
         margin: 30px 0;
+        height: 19px;
     }
+
     .navbar {
         width: 100%;
+        display: flex;
     }
+
     .nav-link {
         flex: 1;
         text-align: center;
-        padding: 15px 0;
-        border-top: none;
-        border-bottom: 3px solid var(--main-bg-color);
+        padding: 15px 0;      /* Padding égal en haut et en bas */
+        border-top: none;     /* Supprime le trait du "plafond" */
+        border-bottom: 2px solid var(--main-bg-color); /* Trait gris par défaut */
     }
+
     .nav-link:hover {
-        border-top: none;
-        border-bottom: 3px solid var(--main-color);
+        border-top: none; /* FORCE la suppression du trait du haut Desktop */
+        border-bottom: 2px solid var(--main-color); /* Garde uniquement le trait du bas */
+        color: var(--main-color);
     }
 
-    /* RECHERCHE : Transformation du bouton en Loupe */
+    /* RECHERCHE - VERSION RELIEF & OMBRE */
     .search {
-        padding: 0 20px; /* On redonne de la marge interne */
-    }
-    .search-form-submit .submit-text {
-        display: none; /* Cache "Rechercher" */
-    }
-    .search-form-submit .submit-icon {
-        display: inline-block; /* Affiche la loupe */
-    }
-    .search-form-submit {
-        border-radius: 15px; /* Devient un carré arrondi */
-        padding: 0 15px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
     }
 
-    /* FILTRES : Alignement */
+    .search-form {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        /* On ne met plus de border-radius ni d'overflow ici pour laisser l'ombre respirer */
+    }
+
+    /* On arrondit le premier élément de la barre (le marqueur gris) */
+    .search-form-icon {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .search-form-input {
+        flex: 1;
+        min-width: 0;
+        border: none;
+        padding: 0 15px;
+        font-family: inherit;
+        /* Pas d'arrondi ici, il est au milieu */
+    }
+
+    .search-form-submit {
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-color);
+        border: none;
+        padding: 0;
+        /* Arrondi seulement sur la droite pour fermer la "pilule" */
+        border-radius: 0 15px 15px 0; 
+        cursor: pointer;
+
+        /* L'EFFET FIGMA : Ombre portée pour le relief */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); 
+    }
+
+    .search-form-submit .submit-icon {
+        display: inline-block !important;
+        color: white;
+        font-size: 18px;
+    }
+
+    .search-form-submit .submit-text {
+        display: none !important;
+    }
+
+    /* FILTRES */
     .filters-title {
-        width: 100%; /* Le titre "Filtres" prend toute la ligne */
+        width: 100%;
         margin-bottom: 15px;
     }
 
-    /* LAYOUT : Populaires en haut, Hébergements en bas */
+    /* LAYOUT : Populaires en haut (order: -1) */
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 0;
     }
 
     .populaires {
-        order: -1; /* Met les populaires en premier */
+        order: -1; 
         border-radius: 0;
     }
 
     .hebergements {
-        background-color: white !important; /* Fond blanc sur mobile selon Figma */
+        background-color: white !important;
         border-radius: 0;
     }
 
     .hebergements-cards .card {
-        width: 100%; /* 1 seule carte par ligne */
+        width: 100%;
     }
+
 
 
     /*------------------------------------*\
