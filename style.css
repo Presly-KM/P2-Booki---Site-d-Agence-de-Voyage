@@ -625,24 +625,37 @@ p {
         margin-bottom: 15px;
     }
 
-    /* LAYOUT : Populaires en haut (order: -1) */
+    /* LAYOUT MOBILE : On réinitialise l'héritage de la tablette */
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 0;
     }
 
     .populaires {
-        order: -1; 
-        border-radius: 0;
+        order: -1; /* Indispensable : Remet les populaires EN HAUT sur mobile */
+        width: 100%;
+        padding: 30px; /* On garde le padding pour le fond gris */
+        box-sizing: border-box;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column; /* FORCE le retour à l'empilement vertical */
+        gap: 20px;
+    }
+
+    .populaires-cards .card {
+        width: 100%; /* Les cartes reprennent toute la largeur */
     }
 
     .hebergements {
-        background-color: white !important;
-        border-radius: 0;
+        width: 100%;
+        background-color: white !important; /* Fond blanc sur mobile selon Figma */
+        padding: 30px;
     }
 
     .hebergements-cards .card {
-        width: 100%;
+        width: 100%; /* Une seule carte par ligne */
     }
 
 
