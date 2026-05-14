@@ -348,24 +348,15 @@ p {
 
 
 /*------------------------------------*\
-  #MAIN-ACTIVITY (DESKTOP)
+  #MAIN-ACTIVITY (DESKTOP - CORRIGÉ)
 \*------------------------------------*/
 
+/* 1. ON GARDE : La structure et l'alignement avec le haut */
 .activity {
-    /* 1. Éloigne la section du bloc "Hébergements" au-dessus */
     margin-top: 60px; 
-    
-    /* 2. Indente toute la section de 30px. 
-       Cela aligne verticalement le titre "Activités" avec le titre "Hébergements" 
-       et resserre les cartes vers l'intérieur. */
-    padding: 0 30px; 
-    
+    padding: 0 30px; /* L'indentation que tu voulais pour aligner les titres */
     margin-bottom: 60px;
     box-sizing: border-box;
-}
-
-.activity-main {
-    margin-top: 0; /* On annule l'ancienne marge pour utiliser celle du parent */
 }
 
 .activity-main-cards {
@@ -374,25 +365,39 @@ p {
     gap: 30px;
 }
 
+/* 2. ON MODIFIE : La carte pour forcer l'alignement interne */
 .activity-card {
     flex: 1;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex; /* Permet au contenu de s'étirer */
+}
+
+/* 3. ON AJOUTE : Le lien pour qu'il occupe tout l'espace */
+.activity-card a {
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .activity-card img {
     height: 380px; 
     width: 100%;
     object-fit: cover;
+    flex-shrink: 0; /* Empêche l'image de se déformer si le texte est long */
 }
 
+/* 4. ON MODIFIE : Le titre pour qu'il soit "poussé" vers le bas uniformément */
 .activity-card-title {
-    margin: 20px;
+    margin: 0;
+    padding: 20px; /* On remplace margin par padding */
     font-size: 16px;
     font-weight: bold;
+    flex-grow: 1;       /* FORCE le titre à prendre tout l'espace restant */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement dans son espace */
 }
 
 /*------------------------------------*\
