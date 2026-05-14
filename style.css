@@ -499,6 +499,20 @@ p {
         width: calc(33.33% - 14px); 
     }
 
+    /* 4. SECTION ACTIVITÉS (Ajustement Tablette) */
+    
+    /* On cible l'image pour réduire sa hauteur */
+    .activity-card img {
+        height: 200px;     /* On passe de 380px (Desktop) à 200px (Tablette) */
+        object-fit: cover;  /* Indispensable : garde l'image nette et centrée en "rognant" les bords (cadrage serré style Figma) */
+    }
+
+    /* On réduit un peu les marges internes du titre pour compacter le tout */
+    .activity-card-title {
+        padding: 15px 20px; /* Moins d'espace vertical que sur Desktop */
+        font-size: 14px;    /* Titre légèrement plus petit pour l'équilibre visuel */
+    }
+
 
 /*------------------------------------*\
   #HOSTING POPULAR
