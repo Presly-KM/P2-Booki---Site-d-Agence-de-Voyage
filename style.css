@@ -576,62 +576,87 @@ p {
         color: var(--main-color);
     }
 
-    /* RECHERCHE - VERSION RELIEF & OMBRE */
-    .search {
-        padding: 30px 20px;
-        display: flex;
-        flex-direction: column;
-    }
+    /*------------------------------------*\
+  #RECHERCHE - VERSION COMPACTE
+\*------------------------------------*/
 
-    .search-form {
-        display: flex;
-        width: 100%;
-        height: 50px;
-        box-sizing: border-box;
-        /* On ne met plus de border-radius ni d'overflow ici pour laisser l'ombre respirer */
-    }
+/* 1. On annule complètement le padding du bas pour que le contenu puisse toucher le bloc suivant */
+.search {
+    padding: 30px 20px 0 20px; /* On passe le 15px à 0 */
+    display: flex;
+    flex-direction: column;
+}
 
-    /* On arrondit le premier élément de la barre (le marqueur gris) */
-    .search-form-icon {
-        border-radius: 15px 0 0 15px;
-    }
+/* On réduit l'espace entre le texte et la barre de recherche */
+.search-header {
+    margin-bottom: 30px; 
+}
 
-    .search-form-input {
-        flex: 1;
-        min-width: 0;
-        border: none;
-        padding: 0 15px;
-        font-family: inherit;
-        /* Pas d'arrondi ici, il est au milieu */
-    }
+/* On s'assure que le titre et le sous-titre ne "poussent" pas trop */
+.search-title {
+    margin-top: 0;
+    margin-bottom: 8px; /* Espace réduit entre titre et sous-titre */
+}
 
-    .search-form-submit {
-        width: 50px;
-        height: 50px;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--main-color);
-        border: none;
-        padding: 0;
-        /* Arrondi seulement sur la droite pour fermer la "pilule" */
-        border-radius: 0 15px 15px 0; 
-        cursor: pointer;
+.search-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-        /* L'EFFET FIGMA : Ombre portée pour le relief */
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); 
-    }
+.search-form {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
 
-    .search-form-submit .submit-icon {
-        display: inline-block !important;
-        color: white;
-        font-size: 18px;
-    }
+/* --- LE RESTE ON GARDE (C'est ton travail visuel qui fonctionne) --- */
 
-    .search-form-submit .submit-text {
-        display: none !important;
-    }
+.search-form-icon {
+    border-radius: 15px 0 0 15px;
+}
+
+.search-form-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    padding: 0 15px;
+    font-family: inherit;
+}
+
+.search-form-submit {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0; 
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.search-form-submit .submit-icon {
+    display: inline-block !important;
+    color: white;
+    font-size: 18px;
+}
+
+.search-form-submit .submit-text {
+    display: none !important;
+}
+
+/* 2. On ajuste l'espace final entre le texte et le bloc gris "Les plus populaires" */
+.search-info {
+    margin-top: 15px;
+    margin-bottom: 20px; /* C'est cette valeur qui définit l'écart précis avec le bloc gris */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
     /* FILTRES */
     .filters-title {
@@ -650,6 +675,7 @@ p {
         width: 100%;
         padding: 30px; /* On garde le padding pour le fond gris */
         box-sizing: border-box;
+        margin-top: 0;      /* Coller au bloc précédent */
     }
 
     .populaires-cards {
