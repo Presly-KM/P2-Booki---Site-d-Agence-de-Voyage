@@ -63,9 +63,9 @@ p {
 }
 
 
-/*------------------------------------*\
-  #HEADER (OPTIMISATION PLAFOND)
-\*------------------------------------*/
+/*----------------------*\
+  #HEADER 
+\*----------------------*/
 
 .header {
     display: flex;
@@ -99,14 +99,14 @@ p {
 
 
 
-/*------------------------------------*\
+/*---------------------*\
   #MAIN
-\*------------------------------------*/
+\*---------------------*/
 
 
-/*------------------------------------*\
+/*---------------------*\
   #MAIN-SEARCH
-\*------------------------------------*/
+\*---------------------*/
 
 .search-header {
     margin-bottom: 35px;
@@ -222,13 +222,9 @@ p {
     font-size: 10px;
 }
 
-/*------------------------------------*\
+/*--------------------------*\
   #HEBERGEMENTS & POPULAIRES
-\*------------------------------------*/
-
-/*------------------------------------*\
-  #HEBERGEMENTS & POPULAIRES (ALIGNÉ)
-\*------------------------------------*/
+\*--------------------------*/
 
 .hebergements-and-populaires {
     display: flex;
@@ -361,9 +357,9 @@ p {
 }
 
 
-/*------------------------------------*\
-  #MAIN-ACTIVITY (DESKTOP - CORRIGÉ)
-\*------------------------------------*/
+/*-----------------------*\
+  #MAIN-ACTIVITY
+\*-----------------------*/
 
 /* 1. ON GARDE : La structure et l'alignement avec le haut */
 .activity {
@@ -420,9 +416,9 @@ p {
     align-items: center; /* Centre le texte verticalement dans son espace */
 }
 
-/*------------------------------------*\
-  #FOOTER - ALIGNEMENT PARFAIT
-\*------------------------------------*/
+/*---------------------*\
+  #FOOTER 
+\*---------------------*/
 
 .footer {
     background-color: var(--main-bg-color); /* Le gris #F2F2F2 */
@@ -466,13 +462,20 @@ p {
 }
 
 
-/* TABLETTE : Ajustement global */
+/*------------------------------------*\
+  #TABLETTE (1024px et moins)
+\*------------------------------------*/
+
 @media screen and (max-width: 1024px) {
     .main-container {
         padding: 0 20px;
     }
 
-    /* 1. EMPILEMENT VERTICAL DES SECTIONS */
+/*------------------------*\
+  #HEBERGEMENTS & POPULAIRES (TABLETTE)
+\*------------------------*/
+
+    /* 1. EMPILEMENT VERTICAL DES SECTIONS HEBERGEMENTS ET POPULAIRES */
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 30px;
@@ -482,7 +485,19 @@ p {
         width: 100%;
     }
 
-    /* 2. SECTION POPULAIRES (En bas sur tablette) */
+    /* 2. SECTION HEBERGEMENTS (En bas) */
+    .hebergements-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hebergements-cards .card {
+        /* On maintient 3 colonnes mais on réduit un peu le calcul du gap */
+        width: calc(33.33% - 14px); 
+    }
+
+    /* 3. SECTION POPULAIRES (En bas sur tablette) */
     .populaires {
         width: 100%;
         /* On retire order: -1 pour que la section reprenne sa place normale après les hébergements */
@@ -498,7 +513,7 @@ p {
         flex: 1;
     }
 
-    /* 3. SECTION HEBERGEMENTS (En bas) */
+    /* 4. SECTION HEBERGEMENTS (En bas) */
     .hebergements-cards {
         display: flex;
         flex-wrap: wrap;
@@ -510,7 +525,9 @@ p {
         width: calc(33.33% - 14px); 
     }
 
-    /* 4. SECTION ACTIVITÉS (Ajustement Tablette) */
+/*--------------------------*\
+  #ACTIVITÉS (TABLETTE)
+\*--------------------------*/
     
     /* On cible l'image pour réduire sa hauteur */
     .activity-card img {
@@ -525,32 +542,20 @@ p {
     }
 
 
-/*------------------------------------*\
-  #HOSTING POPULAR
-\*------------------------------------*/
-
-
-/*------------------------------------*\
-  #MAIN-HOSTING
-\*------------------------------------*/
-
- 
-/*------------------------------------*\
-  #MAIN-ACTIVITY
-\*------------------------------------*/
-
-
-/*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-
 }
+
+/*------------------------------------*\
+  #MOBILE (768px et moins)
+\*------------------------------------*/
 
 @media screen and (max-width: 768px) {
     .main-container {
         padding: 0; 
     }
+
+/*----------------------*\
+  #HEADER (MOBILE)
+\*----------------------*/
 
     /* HEADER : On libère la hauteur et on centre */
     .header {
@@ -584,9 +589,9 @@ p {
         color: var(--main-color);
     }
 
-    /*------------------------------------*\
-  #RECHERCHE - VERSION COMPACTE
-\*------------------------------------*/
+/*------------------------*\
+  #RECHERCHE (MOBILE)
+\*------------------------*/
 
 /* 1. On annule complètement le padding du bas pour que le contenu puisse toucher le bloc suivant */
 .search {
@@ -671,10 +676,24 @@ p {
         margin-bottom: 15px;
     }
 
+/*---------------------*\
+  #HEBERGEMENTS & POPULAIRES (MOBILE)
+\*---------------------*/
+
     /* LAYOUT MOBILE : On réinitialise l'héritage de la tablette */
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 0;
+    }
+
+    .hebergements {
+        width: 100%;
+        background-color: white !important; /* Fond blanc sur mobile selon Figma */
+        padding: 30px;
+    }
+
+    .hebergements-cards .card {
+        width: 100%; /* Une seule carte par ligne */
     }
 
     .populaires {
@@ -695,21 +714,11 @@ p {
         width: 100%; /* Les cartes reprennent toute la largeur */
     }
 
-    .hebergements {
-        width: 100%;
-        background-color: white !important; /* Fond blanc sur mobile selon Figma */
-        padding: 30px;
-    }
+    
 
-    .hebergements-cards .card {
-        width: 100%; /* Une seule carte par ligne */
-    }
-
-
-
-    /*------------------------------------*\
-      #MAIN-ACTIVITY (MOBILE)
-    \*------------------------------------*/
+/*-------------------------*\
+  #MAIN-ACTIVITY (MOBILE)
+\*-------------------------*/
 
     .activity {
         padding: 30px 20px; /* On ajoute 20px de marge à gauche et à droite */
@@ -740,6 +749,10 @@ p {
            donc l'image ne sera pas déformée, juste recadrée proprement */
     }
 
+
+/*------------------------*\
+  #FOOTER (MOBILE)
+\*------------------------*/
 
     /* FOOTER MOBILE : On empile les colonnes */
     .footer {
