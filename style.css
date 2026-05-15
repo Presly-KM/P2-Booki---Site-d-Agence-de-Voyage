@@ -1,16 +1,5 @@
-/* Suppression des marges et paddings par défaut ajoutés par le navigateur */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Ajustement du conteneur principal */
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 50px; /* On garde le padding sur les côtés, mais 0 en haut/bas */
-    box-sizing: border-box;
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -19,11 +8,12 @@ html, body {
     --filter-bg-color: #DEEBFF; /* <--- Remplace F7 par FF */
 }
 
-
-@font-face {
-  font-family: 'Raleway-VariableFont_wght';
-  src: url('Raleway-VariableFont_wght.ttf');
+/* Suppression des marges et paddings par défaut ajoutés par le navigateur */
+html, body {
+    margin: 0;
+    padding: 0;
 }
+
 
 /* On fusionne et on applique les limites officielles */
 .main-container {
@@ -33,11 +23,6 @@ html, body {
     margin: 0 auto;
     padding: 0 50px; /* Espacement standard sur les côtés */
     box-sizing: border-box;
-}
-
-
-body {
-  font-family: Raleway-VariableFont_wght, Arial;
 }
 
 
