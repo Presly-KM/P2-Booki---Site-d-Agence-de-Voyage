@@ -46,12 +46,18 @@ a {
   text-decoration: none;
 }
 
-main ul,
+/* On ne met plus de display: flex sur le footer ul */
+main ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 footer ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -425,33 +431,48 @@ p {
 }
 
 /*------------------------------------*\
-  #FOOTER
+  #FOOTER - ALIGNEMENT PARFAIT
 \*------------------------------------*/
 
 .footer {
-  background-color: #F2F2F2;
-  width: 100%;
+    background-color: var(--main-bg-color); /* Le gris #F2F2F2 */
+    width: 100%;
+    margin-top: 30px;
 }
 
-.footerWrapper {
-  display: flex;
-  max-width: 100%;
-  width: 1440px;
-  margin: auto;
-  padding: 0 32px;
-  box-sizing: border-box;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px; /* Même largeur que ton header et main */
+    margin: 0 auto;    /* Centre le bloc sur la page */
+    padding: 30px 50px; /* Aligne le texte avec le reste du site */
+    box-sizing: border-box;
 }
 
-.footerWrapperColumn {
-  padding: 30px 115px;
+.footer-column {
+    flex: 1;
 }
 
-.footer ul {
-  display: block;
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.footer ul li {
-  margin: 16px 0;
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
 }
 
 
