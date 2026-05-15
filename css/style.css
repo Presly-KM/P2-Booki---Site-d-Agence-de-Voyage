@@ -304,7 +304,7 @@ p {
     gap: 33px; /* Gap légèrement augmenté pour aligner le bas des deux blocs gris */
 }
 
-/* 3. STYLE COMMUN DES CARTES (Tes réglages qui fonctionnent) */
+/* 3. STYLE COMMUN DES CARTES */
 .card {
     background-color: white;
     border-radius: 20px;
@@ -368,7 +368,7 @@ p {
 /* 1. ON GARDE : La structure et l'alignement avec le haut */
 .activity {
     margin-top: 60px; 
-    padding: 0 30px; /* L'indentation que tu voulais pour aligner les titres */
+    padding: 0 30px; /* L'indentation ajoutée pour aligner les titres */
     margin-bottom: 60px;
     box-sizing: border-box;
 }
@@ -618,7 +618,6 @@ p {
     box-sizing: border-box;
 }
 
-/* --- LE RESTE ON GARDE (C'est ton travail visuel qui fonctionne) --- */
 
 .search-form-icon {
     border-radius: 15px 0 0 15px;
