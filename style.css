@@ -261,6 +261,13 @@ p {
     width: calc(33.33% - 20px);
 }
 
+.hebergements-cards .card img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
 .hebergements-more {
     display: inline-block;
     margin-top: 30px;
@@ -314,12 +321,6 @@ p {
     height: 144px;
 }
 
-.hebergements-cards .card img {
-    height: 120px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
 
 .populaires-cards .card img {
     width: 33%;
