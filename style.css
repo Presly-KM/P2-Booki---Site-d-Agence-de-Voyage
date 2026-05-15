@@ -754,12 +754,24 @@ p {
            donc l'image ne sera pas déformée, juste recadrée proprement */
     }
 
-    /* FOOTER : Empilement */
-    .footerWrapper {
-        flex-direction: column;
-        padding: 30px;
+    
+    /* FOOTER MOBILE : On empile les colonnes */
+    .footer {
+        margin-top: 0; /* On colle le footer au contenu sur mobile */
     }
-    .footerWrapperColumn {
-        padding: 15px 0;
+
+    .footer-container {
+        flex-direction: column; /* FORCE l'empilement vertical */
+        padding: 30px;          /* Espace uniforme tout autour */
+        gap: 50px;              /* Espace important entre les 3 blocs (À propos, Nos hébergements, Assistance) */
+    }
+
+    .footer-column {
+        flex: none;             /* On annule le flex: 1 du desktop */
+        width: 100%;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 15px;    /* Un peu plus compact pour le mobile */
     }
 }
