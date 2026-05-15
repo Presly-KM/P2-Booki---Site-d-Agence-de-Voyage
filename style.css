@@ -16,7 +16,7 @@ html, body {
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBF7; /* Version 2026 */
+    --filter-bg-color: #DEEBFF; /* <--- Remplace F7 par FF */
 }
 
 
@@ -754,7 +754,7 @@ p {
            donc l'image ne sera pas déformée, juste recadrée proprement */
     }
 
-    
+
     /* FOOTER MOBILE : On empile les colonnes */
     .footer {
         margin-top: 0; /* On colle le footer au contenu sur mobile */
